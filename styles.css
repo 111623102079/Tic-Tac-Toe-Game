@@ -1,0 +1,121 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Start Screen Styles */
+.start-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#start-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #34a853;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#start-btn:hover {
+    background-color: #2c8f43;
+}
+
+/* Game Container Styles */
+.game-container {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.square {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s;
+}
+
+.square:hover {
+    background-color: #ddd;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+#turn-info {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#reset-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #34a853;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reset-btn:hover {
+    background-color: #2c8f43;
+}
+
+/* End Game Screen Styles */
+.end-screen {
+    display: none;
+    text-align: center;
+}
+
+#end-message {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#new-game-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#new-game-btn:hover {
+    background-color: #e64a19;
+}
